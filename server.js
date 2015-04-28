@@ -12,7 +12,7 @@ beyonceShow.buyTickets(100);	// total = 1500 ,cannot buy 100
 
 http.createServer(function(req,res) {
 	res.writeHeader(200,{"Content-Type": "text/html"});
-	res.write("<h1>EX 0 of Chen Shamir</h1><h2>Beyonce-show</h2><p>");
+	res.write("<h1>EX 0 of Chen Shamir</h1><h2>Beyonce-show</h2><h3>Success!</h3><p>");
 	for(var i=0;i < beyonceShow.msgArr.length; i++)
 		res.write(beyonceShow.msgArr[i]+"<br>")
 	res.end("</p>");
